@@ -1,7 +1,7 @@
 {
   "name": "enhanced-array",
   "description": "A collection of common utilities for the JavaScript array",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",
