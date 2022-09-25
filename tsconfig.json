@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "commitlint.config.js",
+    "vitest.config.ts",
+    "rollup.config.js",
+    ".eslintrc.js",
+    "src",
+    "test"
+  ]
+}
