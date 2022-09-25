@@ -48,5 +48,9 @@
     "url": "https://github.com/kevinhermawan/enhanced-array/issues"
   },
   "homepage": "https://github.com/kevinhermawan/enhanced-array#readme",
-  "keywords": []
+  "keywords": [
+    "array",
+    "utility",
+    "enhanced"
+  ]
 }
