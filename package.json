@@ -13,8 +13,7 @@
     "lint": "eslint --ignore-path .gitignore .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
-    "postinstall": "husky install"
+    "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
