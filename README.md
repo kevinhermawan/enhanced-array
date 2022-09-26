@@ -137,6 +137,21 @@ console.log(result); // [1, 2, 3, 5]
 
 ### Reordering Elements
 
+#### [move](/src/move.ts)
+
+Moves the element at the specified position to the specified position.
+
+```ts
+import { move } from 'enhanced-array';
+
+const result = move([1, 2, 3, 4, 5], { index: 0, toIndex: 4 });
+console.log(result); // [2, 3, 4, 5, 1]
+```
+
+> **Time complexity:**
+>
+> O(n), where n is the length of the array.
+
 #### [swap](/src/swap.ts)
 
 Exchanges the element at the specified indices of the array.
@@ -145,7 +160,6 @@ Exchanges the element at the specified indices of the array.
 import { swap } from 'enhanced-array';
 
 const result = swap([1, 2, 3, 4, 5], { i: 0, j: 4 });
-
 console.log(result); // [5, 2, 3, 4, 1]
 ```
 
