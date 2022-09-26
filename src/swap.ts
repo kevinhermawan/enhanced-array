@@ -1,15 +1,15 @@
 type SwapArgs = {
-  i: number;
-  j: number;
+  index: number;
+  withIndex: number;
 };
 
 export function swap<T>(array: T[], args: SwapArgs) {
-  const { i, j } = args;
+  const { index, withIndex } = args;
   const result = array;
 
-  const temp = result[i];
-  result[i] = result[j];
-  result[j] = temp;
+  const temp = result[index];
+  result[index] = result[withIndex];
+  result[withIndex] = temp;
 
   return result;
 }
