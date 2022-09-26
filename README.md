@@ -152,6 +152,21 @@ console.log(result); // [2, 3, 4, 5, 1]
 >
 > O(n), where n is the length of the array.
 
+#### [shuffle](/src/shuffle.ts)
+
+Shuffles the element of the array. Implements [Fisher-Yates shuffle Algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle).
+
+```ts
+import { shuffle } from 'enhanced-array';
+
+const result = shuffle([1, 2, 3, 4, 5]);
+console.log(result); // [5, 3, 2, 4, 1] (shuffled)
+```
+
+> **Time complexity:**
+>
+> O(n), where n is the length of the array.
+
 #### [swap](/src/swap.ts)
 
 Exchanges the element at the specified indices of the array.
