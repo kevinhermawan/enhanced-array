@@ -1,6 +1,6 @@
 {
   "name": "enhanced-array",
-  "description": "A collection of common utilities for the JavaScript array",
+  "description": "A collection of essential utilities that do not exist in the original JavaScript array",
   "version": "0.0.4",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

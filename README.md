@@ -1,8 +1,8 @@
 # Enhanced Array
 
-A collection of common utilities for the JavaScript array.
+A collection of essential utilities that do not exist in the original JavaScript array
 
-> This library copies common utilities from other languages. For advanced utilities, please use a library like Lodash instead.
+> **NOTE:** This library copies utilities of an array that already exists in other languages. For advanced utilities, please use a library like Lodash instead.
 
 ## Installation
 
