@@ -7,11 +7,7 @@ export function insertAt<T>(array: T[], args: InsertAtArgs<T>) {
   const { index, element } = args;
   const lastIndex = array.length - 1;
 
-  if (index > lastIndex) {
-    return array;
-  }
-
-  if (index === lastIndex) {
+  if (index === lastIndex || index > lastIndex) {
     const result = array;
     result.push(element);
 
