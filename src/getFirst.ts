@@ -1,3 +1,3 @@
 export function getFirst<T>(array: T[]) {
-  return array.at(0);
+  return array[0];
 }
