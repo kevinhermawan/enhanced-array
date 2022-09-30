@@ -13,4 +13,6 @@ export { isEmpty } from './isEmpty';
 export { removeAt } from './removeAt';
 
 // Reordering Elements
+export { move } from './move';
+export { shuffle } from './shuffle';
 export { swap } from './swap';
