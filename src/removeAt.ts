@@ -4,19 +4,24 @@ type RemoveAtArgs = {
 
 export function removeAt<T>(array: T[], args: RemoveAtArgs) {
   const { index } = args;
-  const lastIndex = array.length - 1;
 
-  if (index > lastIndex) {
-    return array;
+  if (index === array.length - 1) {
+    const result = array.slice();
+    result.pop();
+
+    return result;
   }
 
-  const result: T[] = [];
+  if (index < array.length - 1) {
+    const result = array.slice(0, index + 1);
+    result.pop();
 
-  for (let i = 0; i < array.length; i++) {
-    if (index !== i) {
-      result.push(array[i]);
+    for (let i = 1; i < array.length - index; i++) {
+      result.push(array[index + i]);
     }
+
+    return result;
   }
 
-  return result;
+  return array;
 }
