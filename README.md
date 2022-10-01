@@ -1,4 +1,4 @@
-# Enhanced Array
+# Enhanced Array ![License](https://img.shields.io/npm/l/enhanced-array) ![Test coverage](https://img.shields.io/codecov/c/github/kevinhermawan/enhanced-array)
 
 A collection of essential utilities that do not exist in the original JavaScript array
 
@@ -63,7 +63,7 @@ console.log(result); // [1, 2, 3, 9, 4, 5]
 
 > **Time complexity:**
 >
-> O(n), where n is the remainder of skipped element.
+> O(n), where n is the remainder of skipped elements.
 >
 > O(1), if `index` is the last index of the array.
 
@@ -129,7 +129,7 @@ console.log(result); // [1, 2, 3, 5]
 
 > **Time complexity:**
 >
-> O(n), where n is the remainder of skipped element.
+> O(n), where n is the remainder of skipped elements.
 >
 > O(1), if `index` is the last index of the array.
 
