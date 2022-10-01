@@ -5,23 +5,19 @@ type InsertAtArgs<T> = {
 
 export function insertAt<T>(array: T[], args: InsertAtArgs<T>) {
   const { index, element } = args;
-  const lastIndex = array.length - 1;
 
-  if (index === lastIndex || index > lastIndex) {
-    const result = array;
+  if (index >= array.length - 1) {
+    const result = array.slice();
     result.push(element);
 
     return result;
   }
 
-  const result: T[] = [];
+  const result = array.slice(0, index);
+  result.push(element);
 
-  for (let i = 0; i < array.length; i++) {
-    if (index === i) {
-      result.push(element);
-    }
-
-    result.push(array[i]);
+  for (let i = 0; i < array.length - index; i++) {
+    result.push(array[index + i]);
   }
 
   return result;

@@ -63,7 +63,7 @@ console.log(result); // [1, 2, 3, 9, 4, 5]
 
 > **Time complexity:**
 >
-> O(n), where n is the length of the array.
+> O(n), where n is the remainder of skipped element.
 >
 > O(1), if `index` is the last index of the array.
 
