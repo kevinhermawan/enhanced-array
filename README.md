@@ -92,7 +92,7 @@ console.log(result3); // true
 >
 > O(n), where n is the length of the array.
 >
-> O(1), if `index` is the last index of the array.
+> O(1), if nil appears in the first or last index.
 
 #### [isEmpty](/src/isEmpty.ts)
 

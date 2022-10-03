@@ -1,13 +1,17 @@
 export function isContainNil<T>(array: T[]) {
-  let result = false;
-
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === undefined || array[i] === null) {
-      result = true;
-
-      break;
-    }
+  if (
+    array.length > 0 &&
+    (array[0] === null ||
+      array[0] === undefined ||
+      array[array.length - 1] === null ||
+      array[array.length - 1] === undefined)
+  ) {
+    return true;
   }
 
-  return result;
+  for (let i = 1; i < array.length - 1; i++) {
+    if (array[i] === null || array[i] === undefined) return true;
+  }
+
+  return false;
 }
