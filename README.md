@@ -154,7 +154,7 @@ console.log(result); // [2, 3, 4, 5, 1]
 
 #### [shuffle](/src/shuffle.ts)
 
-Shuffles the element of the array. Implements [Fisher-Yates shuffle Algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle).
+Shuffles the element of the array. Implements [Sattolo cycle](https://rosettacode.org/wiki/Sattolo_cycle).
 
 ```ts
 import { shuffle } from 'enhanced-array';
